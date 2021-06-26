@@ -1,8 +1,4 @@
 class role::master_server {
   include profile::base
   include profile::agent_nodes
-  include dockeragent
-  dockeragent::node { 'web.puppet.vm': }
-  dockeragent::node { 'db.puppet.vm': }
-  dockeragent::node { 'minetest.puppet.vm': }
 }
